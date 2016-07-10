@@ -1,0 +1,162 @@
+﻿<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+        <title>Biscotti Della Mamma</title>
+        <link href="style.css"" rel="stylesheet" type="text/css"/>
+        <style type="text/css">
+            body {
+                background-image: url(fundo.jpg);
+                background-repeat: no-repeat;
+                margin-left: 0px;
+                margin-top: 0px;
+                margin-right: 0px;
+                margin-bottom: 0px;
+            }
+        </style>
+        <script>
+        	$('.menu a').click(function(){       
+                var vaiPara = $(this).attr('href').split('#').pop();
+                $('html,body').stop().animate({scrollTop: $(vaiPara).offset().top}, 2000);
+                return false;
+			});
+        </script>
+    </head>
+    <body>
+    	<! Página Inicial >
+        <table width="100%" height="715px" align="right" cellpadding="0" cellspacing="0" background="fundobranco.png">
+            <tr>
+                <th align="center" valign="middle" nowrap="nowrap">
+                <! Menu >
+    			<div>
+                    <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+                    <html xmlns="http://www.w3.org/1999/xhtml">
+                        <head>
+                            <title>Stable Menus with CSS3 and jQuery</title>
+                            <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+                            <link rel="stylesheet" href="style.css" type="text/css" media="screen" />
+                            
+                            <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" charset="utf-8"></script>
+                            <script language="javascript">
+                            $(function(){
+                                
+                                var navigations = $('#navigations'),
+                                    pos = navigations.offset();
+                                    
+                                    $(window).scroll(function(){
+                                                              
+                                        if($(this).scrollTop() > pos.top+navigations.height() && navigations.hasClass('default')){
+                                            
+                                            navigations.fadeOut('fast', function(){
+                                                                          
+                                                $(this).removeClass('default').addClass('stabled').fadeIn('fast');
+                                            });
+                                            
+                                        } else if($(this).scrollTop() <= pos.top && navigations.hasClass('stabled')){
+                                            
+                                            navigations.fadeOut('fast', function(){
+                                                                          
+                                                $(this).removeClass('stabled').addClass('default').fadeIn('fast');
+                                            });
+                                        }
+                                        
+                                        /*$('#navigations').mouseenter(function(){
+                                                                       
+                                            $(this).removeClass('fixed').addClass('hovered').fadeIn('fast');
+                                            
+                                        }).mouseout(function(){
+                                            
+                                            $(this).removeClass('hovered').addClass('fixed').fadeIn('fast');
+                                            
+                                        });*/
+                                    });
+                            });
+                            </script>
+                        </head>
+                        <body>
+                        <div id="mainMenus">
+                            <div id="navigations" class="default">
+                                <ul>
+                                    <li><a href="#">Página Inicial</a></li>
+                                    <li><a href="#link1">O Projeto</a></li>
+                                    <li><a href="#link2">Receita</a></li>
+                                    <li><a href="fotos.html">Fotos</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div id="content">
+                        </div>
+                        </body>
+                	</html>
+			    </div>
+                <table width="800px" border="0" align="center">
+                    <tr>
+                        <td>
+                            <video controls autoplay >
+        						<source src="../../Trabalho website/site/biscotti.mp4" type="video/mp4">
+      						</video>
+                        </td>
+                    </tr>
+                </table>
+            	</th>
+        	</tr>
+        </table>
+   		<! O Projeto >
+        <table width="100%" height="715px" border="0" cellpadding="0" cellspacing="0" id="link1">
+            <tr>
+                <td align="center" valign="middle" bgcolor="#FFFFFF">
+                  <table width="80%" border="0">
+                        <tr>
+                                <td align="left" valign="top">
+                                    <h6>O Projeto</h6>
+                                    <h4>
+                                    	Projeto desenvolvido pela aluna de Produção Multimídia Jaqueline Paula de Bona sob orientação do Professor Fabiano Pessôa.<br><br><br></h4>
+										<h3>Quando l'ispirazione viene dal cuore.<br><br><h3>
+										<h4>O metro quadrado é composto por um pedestal e ao seu redor uma pirâmide de fornos. Cada porta do forno contém um ingrediente que compõem a receita do biscoito ou algo que faça parte do desenvolvimento. Em cima do pedestal há um forno que suporta os displays identificado a aluna participante, ao lado os agradecimentos às pessoas que ajudaram no projeto e o  tornaram possível e atrás há o orientador e o coordenador em seus respectivos displays.<br><br>
+As fotos não passarão quantidades e nem informações. O objetivo é passar para cada pessoa que o melhor biscoito é o da sua mãe ou o melhor biscoito que comeu ou poderá comer. Cada pessoa irá imagina-lo de um jeito diferente a partir do que viu. Aprecie!<br><br>
+										Participar da 7 Mostra Produção Cultural e Design é ter a oportunidade de desenvolver um projeto totalmente diferente do tradicional e poder me desafiar. Um desafio que vai além da sala de aula. Um desafio que permite nos aperfeiçoarmos cada vez. E que venham mais fornos. :-)<br><br>
+                                        Acompanhe Biscotti Della Mamma no <a href="https://instagram.com/biscottidellamamma/" title="Instagram" target="_blank">Instagram</a>.
+                                    
+                                    </h4>
+                                </td>
+                      </tr>
+                  </table>
+                </td>
+            </tr>            
+    	</table>
+        <! Receita >
+        <table width="100%" height="715px" border="0" cellpadding="0" cellspacing="0" background="fundobranco.png" id="link2">
+            <tr>
+                <td align="center" valign="middle">
+                    <table width="80%" border="0">
+                        <tr>
+                                <td align="left">
+                                    <h6>Receita</h6>
+                                    <h3>
+                                    	Ingredientes</br>
+                                    </h3>    
+                                    <h4>
+                                    	12 ovos</br>
+                                        1 garrafa de leite</br>
+                                        1 xícara de manteiga</br>
+                                        100g de samolhaco</br>
+                                        1,200kg de açúcar</br>
+                                        2 cascas de limão</br>
+                                        2 colheres de banha</br>
+                                        Farinha ao ponto</br></br></br>
+                                    </h4>
+                                    <h3>
+                                        Modo de preparo</br>
+                                    </h3>
+                                    <h4>
+                                        Amassar todos os ingredientes até formar uma massa dura. Depois levar ao forno até ficar no ponto.</br>
+                                        Obs.: é tudo o que você precisa saber. ;)
+                                    </h4>
+                                </td>
+                        </tr>
+                        </table>
+                </td>
+            </tr>
+        </table>
+    </body>
+</html>
